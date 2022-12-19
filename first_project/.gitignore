@@ -1,0 +1,11 @@
+# .idea folder
+# possible options: .idea /.idea/ /idea/
+.idea
+
+# JavaProject file
+JavaProject.iml
+
+# out folder
+out
+
+
