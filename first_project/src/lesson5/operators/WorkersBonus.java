@@ -1,4 +1,4 @@
-package lesson5;
+package lesson5.operators;
 
 import java.util.Scanner;
 

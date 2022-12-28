@@ -1,4 +1,4 @@
-package lesson5;
+package lesson5.operators;
 
 public class FalseOperator {
     public static void main(String[] args) {
