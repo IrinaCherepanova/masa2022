@@ -20,7 +20,7 @@ public class RandomValues {
         int randomIntegerWithBounds = treadLocalRandom.nextInt(10, 20);
         System.out.println("randomIntegerWithBounds = " + randomIntegerWithBounds);
 
-        
+
 
     }
 }
