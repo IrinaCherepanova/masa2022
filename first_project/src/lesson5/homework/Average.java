@@ -26,5 +26,6 @@ public class Average {
             }
         }
         while (correctInterval != true);
+        input.close();
     }
 }
