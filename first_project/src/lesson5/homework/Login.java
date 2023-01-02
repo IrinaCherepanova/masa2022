@@ -34,7 +34,7 @@ public class Login {
             }
         }
 
-
+        input.close();
 
     }
 }
