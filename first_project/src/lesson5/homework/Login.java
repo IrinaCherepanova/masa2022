@@ -19,6 +19,7 @@ public class Login {
                     getPassword = input.nextLine();
                     if (password.equals(getPassword)) {
                         System.out.println("You are logged in!");
+                        input.close();
                         return;
                     }
                     else {
