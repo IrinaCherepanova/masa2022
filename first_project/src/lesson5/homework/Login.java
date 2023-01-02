@@ -8,7 +8,6 @@ public class Login {
         String username = "username";
         String password = "password";
         String getUsername, getPassword, message;
-        boolean login = false;
         Scanner input = new Scanner(System.in);
 
         for (int i = 5; i >= 1; i--) {
@@ -20,6 +19,7 @@ public class Login {
                     getPassword = input.nextLine();
                     if (password.equals(getPassword)) {
                         System.out.println("You are logged in!");
+                        return;
                     }
                     else {
                         message = (j!=1)?("Try again, "+ (j-1) + " attempts left"):"Bye!";
