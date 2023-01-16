@@ -13,6 +13,6 @@ public class MCats {
         cats.add(new Cat("Baranka", "White", 4));
 
         cats.forEach(cat -> System.out.println(cat.toString()));
-        
+
     }
 }
