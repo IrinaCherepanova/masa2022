@@ -31,7 +31,7 @@ public class MyComputers {
                                     new SolidDrive("solid-drive2", 20)
         ));
         myComputers.add(new Computer(
-                                    new GraphicCard(600, "nvidia"),
+                                    new GraphicCard(600, "nvidia2"),
                                     3000,
                                     new Chip("chip3", 200,5),
                                     new Memory[]{
@@ -43,7 +43,7 @@ public class MyComputers {
                                     new SolidDrive("solid-drive3", 10)
         ));
         myComputers.add(new Computer(
-                                    new GraphicCard(100, "nvidia"),
+                                    new GraphicCard(100, "nvidia3"),
                                     4000,
                                     new Chip("chip4", 100,5),
                                     new Memory[]{
