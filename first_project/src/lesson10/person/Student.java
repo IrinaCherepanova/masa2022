@@ -1,4 +1,4 @@
-package lesson10;
+package lesson10.person;
 
 public class Student extends Person {
 
@@ -21,5 +21,10 @@ public class Student extends Person {
     @Override
     public void whatIsYourName() {
         System.out.println("I'm student, my name is " + super.getFirstName() + " " + getLastName());
+    }
+
+    @Override
+    public void whoAreYou() {
+        System.out.println("I'm a student");
     }
 }
