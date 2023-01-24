@@ -33,6 +33,6 @@ public class Car extends Vehicle{
 
     @Override
     void whoAreYou() {
-        System.out.println("I'm a car");
+        System.out.println("I'm a car " + getBrand() + " " + getYear());
     }
 }

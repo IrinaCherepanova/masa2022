@@ -32,6 +32,6 @@ public class Truck extends Vehicle{
 
     @Override
     void whoAreYou() {
-        System.out.println("I'm a truck");
+        System.out.println("I'm a truck " + getBrand() + " " + getYear());
     }
 }
