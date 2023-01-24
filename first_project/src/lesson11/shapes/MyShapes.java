@@ -20,8 +20,8 @@ public class MyShapes {
                     int subOption = input.nextInt();
                     String color = "";
                     switch (subOption){
-                        System.out.println("Choose your color:");
-                        color = input.next();
+                        //System.out.println("Choose your color:");
+                        //color = input.next();
                         case 1:
                             System.out.println("Enter square side:");
                             collectionOfShapes.add(new Square(color, input.nextDouble()));
