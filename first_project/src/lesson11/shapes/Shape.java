@@ -8,6 +8,9 @@ public abstract class Shape {
         this.color = color;
     }
 
+    public Shape(){
+
+    }
     public String getColor() {
         return color;
     }

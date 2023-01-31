@@ -1,5 +1,7 @@
 package lesson11.shapes;
 
+import java.util.Scanner;
+
 public class Square extends Shape{
 
     private double side;
@@ -7,6 +9,15 @@ public class Square extends Shape{
     public Square(String color, double side) {
         super(color);
         this.side = side;
+    }
+
+    public Square(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Choose your color:");
+        setColor(input.nextLine());
+        System.out.println("Enter square side:");
+        this.side = input.nextDouble();
+        System.out.println("Nice choice! Thank you!");
     }
 
     @Override

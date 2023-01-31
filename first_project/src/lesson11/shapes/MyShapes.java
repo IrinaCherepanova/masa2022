@@ -8,48 +8,50 @@ public class MyShapes {
 
         Scanner input = new Scanner(System.in);
         ArrayList<Shape> collectionOfShapes = new ArrayList<>();
+        int mainMenuOption = 0;
+        int shapesMenuOption = 0;
 
-        Messages.printMainMenu();
-        int option = input.nextInt();
-
-        while (option >= 1 && option <= 7){
-            System.out.println("You have chosen " + option);
-            switch (option){
+        do{
+            mainMenuOption = Messages.getMainMenuSelection();
+            switch (mainMenuOption){
                 case 1:
-                    Messages.printShapesMenu();
-                    int subOption = input.nextInt();
-                    String color = "";
-                    switch (subOption){
-                        //System.out.println("Choose your color:");
-                        //color = input.next();
+                    shapesMenuOption = Messages.getShapesMenuSelection();
+                    switch (shapesMenuOption){
                         case 1:
-                            System.out.println("Enter square side:");
-                            collectionOfShapes.add(new Square(color, input.nextDouble()));
+                            collectionOfShapes.add(new Square());
                             break;
                         case 2:
+                            collectionOfShapes.add(new Rectangle());
                             break;
                         case 3:
-                            System.out.println("Enter circle radius:");
-                            collectionOfShapes.add(new Circle(color, input.nextDouble()));
-
+                            collectionOfShapes.add(new Circle());
                             break;
                         case 4:
+                            collectionOfShapes.add(new RightTriangle());
                             break;
-
                     }
                     break;
                 case 2:
                     Messages.printCollection(collectionOfShapes);
                     break;
-                case 7:
-                    System.out.println("Exiting...");
-                    return;
+                case 3:
+                    Messages.printSumAllPerimeters(collectionOfShapes);
+                    break;
+                case 4:
+                    Messages.printSumAllAreas(collectionOfShapes);
+                    break;
+                case 5:
+                    Messages.printTheBiggestPerimeter(collectionOfShapes);
+                    break;
+                case 6:
+                    Messages.printTheBiggestArea(collectionOfShapes);
+                    break;
             }
-            Messages.printMainMenu();
-            option = input.nextInt();
-        }
 
-        System.out.println("Good bye...");
+        }while (mainMenuOption != 7);
+
+        System.out.println("Bye!");
 
     }
 }
+

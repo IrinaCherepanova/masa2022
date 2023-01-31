@@ -1,5 +1,7 @@
 package lesson11.shapes;
 
+import java.util.Scanner;
+
 public class RightTriangle extends Shape{
 
     private double sideA;
@@ -13,13 +15,27 @@ public class RightTriangle extends Shape{
         this.sideC = side3;
     }
 
+    public RightTriangle(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Choose your color:");
+        setColor(input.nextLine());
+        System.out.println("Enter side A:");
+        this.sideA = input.nextDouble();
+        System.out.println("Enter side B:");
+        this.sideB = input.nextDouble();
+        System.out.println("Enter side C:");
+        this.sideC = input.nextDouble();
+        System.out.println("Amazing! Thank you!");
+
+    }
+
     @Override
     public String toString() {
         return "RightTriangle{" +
                 "sideA=" + sideA +
                 ", sideB=" + sideB +
                 ", sideC=" + sideC +
-                ' ';
+                ' ' + super.toString();
     }
 
     @Override
