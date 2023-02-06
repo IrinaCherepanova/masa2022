@@ -8,14 +8,9 @@ public class Exceptions_07_MethodsOfExceptions {
         try {
             array[57] = 57;
 
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-        catch (ArrayIndexOutOfBoundsException e){
+        } catch (ArrayIndexOutOfBoundsException e){
             System.out.println(e.toString());
-        }
-        catch (Exception e){
+        } catch (Exception e){
             e.printStackTrace();
         }
     }
